@@ -1,0 +1,82 @@
+查看是否安装Git
+git
+
+Linux 安装
+sudo apt-get install git
+
+Mac 安装
+1.安装xcode ，菜单preference->downloads->command line tools 里安装
+2.安装homebrew， brew install git
+3.设置默认版本 export PATH=/usr/local/bin:$PATH
+
+Win 安装
+官网下载安装，哈哈
+
+git config --global user.name 'name'
+git config --global user.email '123@123.com'
+
+查询目录所在
+pwd
+
+建立本机仓库 初始化仓库
+git init
+
+添加文件到仓库
+git add
+
+提交文件到仓库
+git commit -m '备注'
+
+查看状态
+git status
+
+修改内容
+git diff
+
+提交历史记录
+git log
+git log --pretty=oneline  简化显示
+
+版本硬回退
+git reset --hard HEAD^    可以写成HEAD~10
+git reset --hard 1094a    回退指定版本，ID信息尽量多
+
+查看文件
+cat readme.txt
+
+命令历史
+git reflog
+
+放弃工作区的修改  
+在add 之前
+git checkout -- readme.txt
+
+放弃暂存区的修改，回到工作区
+在add 之后commit 之前
+git reset HEAD readme.txt
+
+从版本库中删除文件
+git rm readme.txt
+
+创建SSH-KEY
+ssh-keygen -t rsa -C '123@123.com'
+登录GitHub->account setting->ssh keys->复制id_rsa.pub 内容到新key 里
+
+把本地库内容推送到远程
+git push -u origin master  把当前分支master 推送到远程,首次用-u，下次不用
+
+从远程克隆到本地
+git clone git@github.com:lazy928/gitlearning.git
+
+创建并切换到新分支
+git checkout -b dev    -b 表示创建并切换
+git switch -c dev
+git branch dev   创建
+git checkout dev  切换
+
+把分支合并到某分支上
+git merge dev 把dev 合并到master
+
+删除分支
+git branch -d dev
+
