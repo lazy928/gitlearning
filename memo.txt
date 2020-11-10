@@ -82,3 +82,12 @@ git branch -d dev
 
 查看分支合并图
 git log --graph
+
+用--no-ff 显示分支合并历史
+git merge --no-ff -m '备注' dev
+
+储存当前工作和恢复
+git stash  储存
+git stash pop  恢复并删除储存内容
+git stash apply 恢复不删内容
+git stash drop 删除暂存内容
