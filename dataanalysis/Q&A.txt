@@ -1,0 +1,3 @@
+Q: error 54, 'Connection reset by peer'
+A: pip install requests[security]
+
