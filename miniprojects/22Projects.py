@@ -46,3 +46,44 @@
 #         print("That's not a valid play.Check your spelling!")
 #     computer = random.choice(choices)
 
+# 3 random password
+# import random
+# passlen = int(input("enter the length of password:"))
+# s = "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ`~!@#$%^&*()_+-="
+# p = ''.join(random.sample(s, passlen))
+# print(p)
+
+# 4 cut the email
+# email = input("what is your email address?:").strip()
+# user_name = email[:email.index("@")]
+# domain_name = email[email.index("@")+1:]
+# res = f"Your uesername is '{user_name}' and your domain name is '{domain_name}'"
+# print(res)
+
+# 5 email auto send
+# import smtplib
+# from email.message import EmailMessage
+#
+# email = EmailMessage()
+# email['from'] = 'xyz name'  # Person who is sending
+# email['to'] = 'xyz id'  # Whom we are is sending
+# email['subject'] = 'xyz subject'  # Subject of email
+# email.set_content("Xyz content of email")  # content of email
+# with smtplib.SMTP(host='smtp.gmail.com', port=587)as smtp:
+#     smtp.ehlo()
+# smtp.starttls()
+# smtp.login("Email_id", "Password")
+# smtp.send_message(email)
+# print("email send")
+
+# 6 read the PDF
+# import pyttsx3, pyPDF2
+# pdfReader = PyPDF2.PdfFileReader(open('file.pdf', 'rb'))
+# speaker = pyttsx3.init()
+# for page_num in range(pdfReader.numPages):
+#     text = pdfReader.getPage(page_num).extractText()
+#     speaker.say(text)
+#     speaker.runAndwait()
+# speaker.stop()
+
+# 7

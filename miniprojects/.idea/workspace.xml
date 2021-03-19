@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe433663-7d76-4cc4-a0f1-53f7cc69a502" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/22Projects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/22Projects.py" beforeDir="false" afterPath="$PROJECT_DIR$/22Projects.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +70,18 @@
       <option name="presentableId" value="Default" />
       <updated>1614324769812</updated>
     </task>
+    <task id="LOCAL-00001" summary="2P">
+      <created>1615883898253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615883898253</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2P" />
+    <option name="LAST_COMMIT_MESSAGE" value="2P" />
   </component>
 </project>
